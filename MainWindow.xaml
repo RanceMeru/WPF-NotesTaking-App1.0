@@ -1,0 +1,21 @@
+﻿<Window x:Class="WPF_NotesTaking_App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_NotesTaking_App"
+        mc:Ignorable="d"
+        Title="NoteTakerAppWPF
+        " Height="450" Width="800">
+    <Grid Background="#FFD1BB7B">
+        <TextBox x:Name="notebox" HorizontalAlignment="Left" Margin="452,155,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="308" Height="256"/>
+        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="27,45,495,172"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="27,309,0,0" VerticalAlignment="Top" Height="37" Width="94"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="211,309,0,0" VerticalAlignment="Top" Height="37" Width="94"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="27,374,0,0" VerticalAlignment="Top" Height="37" Width="94"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="211,374,0,0" VerticalAlignment="Top" Height="37" Width="94" RenderTransformOrigin="0.758,0.783"/>
+        <Label Content="Notes:" HorizontalAlignment="Left" Margin="452,110,0,0" VerticalAlignment="Top" Width="308"/>
+        <TextBlock HorizontalAlignment="Left" Margin="452,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="308" Background="#FFFFFDFD"><Run Text="Title"/><LineBreak/><Run/></TextBlock>
+
+    </Grid>
+</Window>
