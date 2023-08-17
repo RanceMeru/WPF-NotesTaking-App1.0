@@ -8,14 +8,14 @@
         Title="NoteTakerAppWPF
         " Height="450" Width="800">
     <Grid Background="#FFD1BB7B">
-        <TextBox x:Name="notebox" HorizontalAlignment="Left" Margin="452,155,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="308" Height="256"/>
-        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="27,45,495,172"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="27,309,0,0" VerticalAlignment="Top" Height="37" Width="94"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="211,309,0,0" VerticalAlignment="Top" Height="37" Width="94"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="27,374,0,0" VerticalAlignment="Top" Height="37" Width="94"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="211,374,0,0" VerticalAlignment="Top" Height="37" Width="94" RenderTransformOrigin="0.758,0.783"/>
+        <TextBox x:Name="noteBox" HorizontalAlignment="Left" Margin="452,155,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="308" Height="256" TextChanged="noteBox_TextChanged"/>
+        <DataGrid x:Name="previousNotes" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="27,45,495,172" SelectionChanged="previousNotes_SelectionChanged"/>
+        <Button x:Name="load_btn" Content="Load" HorizontalAlignment="Left" Margin="27,309,0,0" VerticalAlignment="Top" Height="37" Width="94" Click="load_btn_Click"/>
+        <Button x:Name="newNote_btn" Content="NewNote" HorizontalAlignment="Left" Margin="211,309,0,0" VerticalAlignment="Top" Height="37" Width="94" Click="newNote_btn_Click"/>
+        <Button x:Name="save_btn" Content="Save" HorizontalAlignment="Left" Margin="27,374,0,0" VerticalAlignment="Top" Height="37" Width="94" Click="save_btn_Click"/>
+        <Button x:Name="delete_btn" Content="Delete" HorizontalAlignment="Left" Margin="211,374,0,0" VerticalAlignment="Top" Height="37" Width="94" RenderTransformOrigin="0.758,0.783" Click="delete_btn_Click"/>
         <Label Content="Notes:" HorizontalAlignment="Left" Margin="452,110,0,0" VerticalAlignment="Top" Width="308"/>
-        <TextBlock HorizontalAlignment="Left" Margin="452,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="308" Background="#FFFFFDFD"><Run Text="Title"/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="titleBox" HorizontalAlignment="Left" Margin="452,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="308" Background="#FFFFFDFD"><Run Text="Title"/><LineBreak/><Run/></TextBlock>
 
     </Grid>
 </Window>

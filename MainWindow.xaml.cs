@@ -24,5 +24,41 @@ namespace WPF_NotesTaking_App
         {
             InitializeComponent();
         }
+
+        private void load_btn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void newNote_btn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void save_btn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void delete_btn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void previousNotes_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void noteBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void titleBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
     }
 }
