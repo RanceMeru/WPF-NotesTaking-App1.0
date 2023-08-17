@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,9 +21,19 @@ namespace WPF_NotesTaking_App
     /// </summary>
     public partial class MainWindow : Window
     {
+        DataTable notes = new DataTable();
+        bool editing = false;
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void mainWindow_Click(object sender, RoutedEventArgs e)
+        {
+            notes.Columns.Add("Title");
+            notes.Columns.Add("Note");
+
+            previousNotes.DataSource = notes;
         }
 
         private void load_btn_Click(object sender, RoutedEventArgs e)

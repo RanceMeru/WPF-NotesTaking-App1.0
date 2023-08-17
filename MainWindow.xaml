@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="NoteTakerAppWPF
         " Height="450" Width="800">
-    <Grid Background="#FFD1BB7B">
+    <Grid x:Name="mainWindow" Background="#FFD1BB7B">
         <TextBox x:Name="noteBox" HorizontalAlignment="Left" Margin="452,155,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="308" Height="256" TextChanged="noteBox_TextChanged"/>
         <DataGrid x:Name="previousNotes" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="27,45,495,172" SelectionChanged="previousNotes_SelectionChanged"/>
         <Button x:Name="load_btn" Content="Load" HorizontalAlignment="Left" Margin="27,309,0,0" VerticalAlignment="Top" Height="37" Width="94" Click="load_btn_Click"/>
